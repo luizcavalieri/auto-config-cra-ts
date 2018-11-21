@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
+  constructor(test: string) {
+    super(test);
+    this.test = test;
+  }
+
+  test: string;
+
   render() {
     return (
       <div className="App">
@@ -11,6 +18,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
+          <h2>{process.env.REACT_APP_NAME}</h2>
           <a
             className="App-link"
             href="https://reactjs.org"
