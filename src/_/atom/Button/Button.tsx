@@ -7,18 +7,18 @@ import './Button.scss';
 // let cx = classNames.bind(styles);
 
 export interface ButtonProps {
-  label: string,
-  icon: string,
-  onClick: any,
-  routeTo: string,
-  goBack: boolean,
-  linkTo: string
-  disabled: boolean,
-  noborder: boolean,
-  buttonGold: boolean,
-  buttonWhite: boolean,
-  active: boolean,
-  width: any // optional fixed min width
+  label?: string,
+  icon?: string,
+  onClick?: any,
+  routeTo?: string,
+  goBack?: boolean,
+  linkTo?: string
+  disabled?: boolean,
+  noborder?: boolean,
+  buttonGold?: boolean,
+  buttonWhite?: boolean,
+  active?: boolean,
+  width?: any // optional fixed min width
 }
 
 class Button extends Component<ButtonProps, {}> {

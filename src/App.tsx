@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import Button from './_/atom/Button/Button';
 
 class App extends Component {
   constructor(test: string) {
@@ -19,6 +20,8 @@ class App extends Component {
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
           <h2>{process.env.REACT_APP_NAME}</h2>
+
+          <Button label={'Test'} />
           <a
             className="App-link"
             href="https://reactjs.org"
