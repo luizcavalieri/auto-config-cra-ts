@@ -13,15 +13,11 @@
 
 # misc
 .DS_Store
-.env
-.env.local
-.env.production
-.env.development.local
-.env.development
-.env.test.local
-.env.test
-.env.production.local
 .idea
+
+# environment variables
+.env
+.env.*
 
 npm-debug.log*
 yarn-debug.log*
